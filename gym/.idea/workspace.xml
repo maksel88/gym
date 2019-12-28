@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46c7e252-a6e3-458e-b197-3fe784cc512d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/maxim.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/maxim.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/maxim.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/CSS/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/CSS/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/1.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/ index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,6 +28,9 @@
     <expand />
     <select />
   </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -45,6 +47,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../blog/blog" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -101,6 +104,9 @@
       <workItem from="1576903000374" duration="6003000" />
       <workItem from="1576949001801" duration="2104000" />
       <workItem from="1577337714075" duration="10327000" />
+      <workItem from="1577381125064" duration="6160000" />
+      <workItem from="1577436900084" duration="7123000" />
+      <workItem from="1577508656671" duration="14097000" />
     </task>
     <servers />
   </component>
