@@ -9,6 +9,7 @@
     <meta name="description" content="this is page of Gym">
     <meta name="keywords" content="tashkent gym, gym">
     <meta name="author" content="Nikitin Maksim">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
             integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
             crossorigin="anonymous"></script>
@@ -24,11 +25,10 @@
             integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
             crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 {#    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>#}
 {#    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>#}
 {#    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>#}
-
     <link rel="stylesheet" type="text/css" href="{% static 'CSS/styles.css' %}">
     <title> Gym </title>
 </head>
@@ -66,7 +66,7 @@
             <div class="col">
                 <div class="row">
                     <div class="table-responsive">
-                        <table class="table table-hover table-bordered">
+                        <table class="table table-hover table-bordered table-sm">
                             <thead class="thead-light">
                             <tr>
                                 <th>ID</th>
@@ -74,6 +74,7 @@
                                 <th>Имя</th>
                                 <th>Фамилия</th>
                                 <th>Телефон</th>
+                                <th>Оплата</th>
                                 <th>Дата оплаты</th>
                                 <th>Дата активации</th>
                                 <th>Дата окончания</th>
@@ -96,6 +97,7 @@
                                 <td>Galina</td>
                                 <td>Nikitina</td>
                                 <td>+998909815173</td>
+                                <td>1000000</td>
                                 <td>26/12/2019</td>
                                 <td>01/01/2020</td>
                                 <td>31/01/2019</td>
@@ -107,7 +109,7 @@
                                 <td>individual</td>
                                 <td>VIP</td>
                                 <td>50%</td>
-                                <td>G.Tashkent, Sergeli 8,124/3</td>
+                                <td>G.Tashkent</td>
                                 <td>cuatrua@gmail.com</td>
                             </tr>
                             </tbody>
@@ -118,6 +120,7 @@
                                 <td>Maksim</td>
                                 <td>Nikitin</td>
                                 <td>+998909883962</td>
+                                <td>1000000</td>
                                 <td>26/12/2019</td>
                                 <td>01/01/2020</td>
                                 <td>31/01/2019</td>
@@ -129,7 +132,467 @@
                                 <td>individual</td>
                                 <td>VIP</td>
                                 <td>50%</td>
-                                <td>G.Tashkent, Sergeli 8,76/34</td>
+                                <td>G.Tashkent</td>
+                                <td>hopefaithlove@mail.ru</td>
+                            </tr>
+                            </tbody>
+                            <tbody>
+                            <tr>
+                                <td>0000001</td>
+                                <td><img src="../static/images/1.jpeg" alt="..." class="img-responsive "></td>
+                                <td>Galina</td>
+                                <td>Nikitina</td>
+                                <td>+998909815173</td>
+                                <td>1000000</td>
+                                <td>26/12/2019</td>
+                                <td>01/01/2020</td>
+                                <td>31/01/2019</td>
+                                <td>48</td>
+                                <td>168</td>
+                                <td>17/10/1988</td>
+                                <td>12</td>
+                                <td>morning</td>
+                                <td>individual</td>
+                                <td>VIP</td>
+                                <td>50%</td>
+                                <td>G.Tashkent</td>
+                                <td>cuatrua@gmail.com</td>
+                            </tr>
+                            </tbody>
+                            <tbody>
+                            <tr>
+                                <td>0000002</td>
+                                <td><img src="../static/images/me.jpg" alt="..." class="img-responsive img-circle"></td>
+                                <td>Maksim</td>
+                                <td>Nikitin</td>
+                                <td>+998909883962</td>
+                                <td>1000000</td>
+                                <td>26/12/2019</td>
+                                <td>01/01/2020</td>
+                                <td>31/01/2019</td>
+                                <td>83</td>
+                                <td>198</td>
+                                <td>17/07/1988</td>
+                                <td>12</td>
+                                <td>morning</td>
+                                <td>individual</td>
+                                <td>VIP</td>
+                                <td>50%</td>
+                                <td>G.Tashkent</td>
+                                <td>hopefaithlove@mail.ru</td>
+                            </tr>
+                            </tbody>
+                            <tbody>
+                            <tr>
+                                <td>0000001</td>
+                                <td><img src="../static/images/1.jpeg" alt="..." class="img-responsive "></td>
+                                <td>Galina</td>
+                                <td>Nikitina</td>
+                                <td>+998909815173</td>
+                                <td>1000000</td>
+                                <td>26/12/2019</td>
+                                <td>01/01/2020</td>
+                                <td>31/01/2019</td>
+                                <td>48</td>
+                                <td>168</td>
+                                <td>17/10/1988</td>
+                                <td>12</td>
+                                <td>morning</td>
+                                <td>individual</td>
+                                <td>VIP</td>
+                                <td>50%</td>
+                                <td>G.Tashkent</td>
+                                <td>cuatrua@gmail.com</td>
+                            </tr>
+                            </tbody>
+                            <tbody>
+                            <tr>
+                                <td>0000002</td>
+                                <td><img src="../static/images/me.jpg" alt="..." class="img-responsive img-circle"></td>
+                                <td>Maksim</td>
+                                <td>Nikitin</td>
+                                <td>+998909883962</td>
+                                <td>1000000</td>
+                                <td>26/12/2019</td>
+                                <td>01/01/2020</td>
+                                <td>31/01/2019</td>
+                                <td>83</td>
+                                <td>198</td>
+                                <td>17/07/1988</td>
+                                <td>12</td>
+                                <td>morning</td>
+                                <td>individual</td>
+                                <td>VIP</td>
+                                <td>50%</td>
+                                <td>G.Tashkent</td>
+                                <td>hopefaithlove@mail.ru</td>
+                            </tr>
+                            </tbody>
+                            <tbody>
+                            <tr>
+                                <td>0000001</td>
+                                <td><img src="../static/images/1.jpeg" alt="..." class="img-responsive "></td>
+                                <td>Galina</td>
+                                <td>Nikitina</td>
+                                <td>+998909815173</td>
+                                <td>1000000</td>
+                                <td>26/12/2019</td>
+                                <td>01/01/2020</td>
+                                <td>31/01/2019</td>
+                                <td>48</td>
+                                <td>168</td>
+                                <td>17/10/1988</td>
+                                <td>12</td>
+                                <td>morning</td>
+                                <td>individual</td>
+                                <td>VIP</td>
+                                <td>50%</td>
+                                <td>G.Tashkent</td>
+                                <td>cuatrua@gmail.com</td>
+                            </tr>
+                            </tbody>
+                            <tbody>
+                            <tr>
+                                <td>0000002</td>
+                                <td><img src="../static/images/me.jpg" alt="..." class="img-responsive img-circle"></td>
+                                <td>Maksim</td>
+                                <td>Nikitin</td>
+                                <td>+998909883962</td>
+                                <td>1000000</td>
+                                <td>26/12/2019</td>
+                                <td>01/01/2020</td>
+                                <td>31/01/2019</td>
+                                <td>83</td>
+                                <td>198</td>
+                                <td>17/07/1988</td>
+                                <td>12</td>
+                                <td>morning</td>
+                                <td>individual</td>
+                                <td>VIP</td>
+                                <td>50%</td>
+                                <td>G.Tashkent</td>
+                                <td>hopefaithlove@mail.ru</td>
+                            </tr>
+                            </tbody>
+                            <tbody>
+                            <tr>
+                                <td>0000001</td>
+                                <td><img src="../static/images/1.jpeg" alt="..." class="img-responsive "></td>
+                                <td>Galina</td>
+                                <td>Nikitina</td>
+                                <td>+998909815173</td>
+                                <td>1000000</td>
+                                <td>26/12/2019</td>
+                                <td>01/01/2020</td>
+                                <td>31/01/2019</td>
+                                <td>48</td>
+                                <td>168</td>
+                                <td>17/10/1988</td>
+                                <td>12</td>
+                                <td>morning</td>
+                                <td>individual</td>
+                                <td>VIP</td>
+                                <td>50%</td>
+                                <td>G.Tashkent</td>
+                                <td>cuatrua@gmail.com</td>
+                            </tr>
+                            </tbody>
+                            <tbody>
+                            <tr>
+                                <td>0000002</td>
+                                <td><img src="../static/images/me.jpg" alt="..." class="img-responsive img-circle"></td>
+                                <td>Maksim</td>
+                                <td>Nikitin</td>
+                                <td>+998909883962</td>
+                                <td>1000000</td>
+                                <td>26/12/2019</td>
+                                <td>01/01/2020</td>
+                                <td>31/01/2019</td>
+                                <td>83</td>
+                                <td>198</td>
+                                <td>17/07/1988</td>
+                                <td>12</td>
+                                <td>morning</td>
+                                <td>individual</td>
+                                <td>VIP</td>
+                                <td>50%</td>
+                                <td>G.Tashkent</td>
+                                <td>hopefaithlove@mail.ru</td>
+                            </tr>
+                            </tbody>
+                            <tbody>
+                            <tr>
+                                <td>0000001</td>
+                                <td><img src="../static/images/1.jpeg" alt="..." class="img-responsive "></td>
+                                <td>Galina</td>
+                                <td>Nikitina</td>
+                                <td>+998909815173</td>
+                                <td>1000000</td>
+                                <td>26/12/2019</td>
+                                <td>01/01/2020</td>
+                                <td>31/01/2019</td>
+                                <td>48</td>
+                                <td>168</td>
+                                <td>17/10/1988</td>
+                                <td>12</td>
+                                <td>morning</td>
+                                <td>individual</td>
+                                <td>VIP</td>
+                                <td>50%</td>
+                                <td>G.Tashkent</td>
+                                <td>cuatrua@gmail.com</td>
+                            </tr>
+                            </tbody>
+                            <tbody>
+                            <tr>
+                                <td>0000002</td>
+                                <td><img src="../static/images/me.jpg" alt="..." class="img-responsive img-circle"></td>
+                                <td>Maksim</td>
+                                <td>Nikitin</td>
+                                <td>+998909883962</td>
+                                <td>1000000</td>
+                                <td>26/12/2019</td>
+                                <td>01/01/2020</td>
+                                <td>31/01/2019</td>
+                                <td>83</td>
+                                <td>198</td>
+                                <td>17/07/1988</td>
+                                <td>12</td>
+                                <td>morning</td>
+                                <td>individual</td>
+                                <td>VIP</td>
+                                <td>50%</td>
+                                <td>G.Tashkent</td>
+                                <td>hopefaithlove@mail.ru</td>
+                            </tr>
+                            </tbody>
+                            <tbody>
+                            <tr>
+                                <td>0000001</td>
+                                <td><img src="../static/images/1.jpeg" alt="..." class="img-responsive "></td>
+                                <td>Galina</td>
+                                <td>Nikitina</td>
+                                <td>+998909815173</td>
+                                <td>1000000</td>
+                                <td>26/12/2019</td>
+                                <td>01/01/2020</td>
+                                <td>31/01/2019</td>
+                                <td>48</td>
+                                <td>168</td>
+                                <td>17/10/1988</td>
+                                <td>12</td>
+                                <td>morning</td>
+                                <td>individual</td>
+                                <td>VIP</td>
+                                <td>50%</td>
+                                <td>G.Tashkent</td>
+                                <td>cuatrua@gmail.com</td>
+                            </tr>
+                            </tbody>
+                            <tbody>
+                            <tr>
+                                <td>0000002</td>
+                                <td><img src="../static/images/me.jpg" alt="..." class="img-responsive img-circle"></td>
+                                <td>Maksim</td>
+                                <td>Nikitin</td>
+                                <td>+998909883962</td>
+                                <td>1000000</td>
+                                <td>26/12/2019</td>
+                                <td>01/01/2020</td>
+                                <td>31/01/2019</td>
+                                <td>83</td>
+                                <td>198</td>
+                                <td>17/07/1988</td>
+                                <td>12</td>
+                                <td>morning</td>
+                                <td>individual</td>
+                                <td>VIP</td>
+                                <td>50%</td>
+                                <td>G.Tashkent</td>
+                                <td>hopefaithlove@mail.ru</td>
+                            </tr>
+                            </tbody>
+                            <tbody>
+                            <tr>
+                                <td>0000001</td>
+                                <td><img src="../static/images/1.jpeg" alt="..." class="img-responsive "></td>
+                                <td>Galina</td>
+                                <td>Nikitina</td>
+                                <td>+998909815173</td>
+                                <td>1000000</td>
+                                <td>26/12/2019</td>
+                                <td>01/01/2020</td>
+                                <td>31/01/2019</td>
+                                <td>48</td>
+                                <td>168</td>
+                                <td>17/10/1988</td>
+                                <td>12</td>
+                                <td>morning</td>
+                                <td>individual</td>
+                                <td>VIP</td>
+                                <td>50%</td>
+                                <td>G.Tashkent</td>
+                                <td>cuatrua@gmail.com</td>
+                            </tr>
+                            </tbody>
+                            <tbody>
+                            <tr>
+                                <td>0000002</td>
+                                <td><img src="../static/images/me.jpg" alt="..." class="img-responsive img-circle"></td>
+                                <td>Maksim</td>
+                                <td>Nikitin</td>
+                                <td>+998909883962</td>
+                                <td>1000000</td>
+                                <td>26/12/2019</td>
+                                <td>01/01/2020</td>
+                                <td>31/01/2019</td>
+                                <td>83</td>
+                                <td>198</td>
+                                <td>17/07/1988</td>
+                                <td>12</td>
+                                <td>morning</td>
+                                <td>individual</td>
+                                <td>VIP</td>
+                                <td>50%</td>
+                                <td>G.Tashkent</td>
+                                <td>hopefaithlove@mail.ru</td>
+                            </tr>
+                            </tbody>
+                            <tbody>
+                            <tr>
+                                <td>0000001</td>
+                                <td><img src="../static/images/1.jpeg" alt="..." class="img-responsive "></td>
+                                <td>Galina</td>
+                                <td>Nikitina</td>
+                                <td>+998909815173</td>
+                                <td>1000000</td>
+                                <td>26/12/2019</td>
+                                <td>01/01/2020</td>
+                                <td>31/01/2019</td>
+                                <td>48</td>
+                                <td>168</td>
+                                <td>17/10/1988</td>
+                                <td>12</td>
+                                <td>morning</td>
+                                <td>individual</td>
+                                <td>VIP</td>
+                                <td>50%</td>
+                                <td>G.Tashkent</td>
+                                <td>cuatrua@gmail.com</td>
+                            </tr>
+                            </tbody>
+                            <tbody>
+                            <tr>
+                                <td>0000002</td>
+                                <td><img src="../static/images/me.jpg" alt="..." class="img-responsive img-circle"></td>
+                                <td>Maksim</td>
+                                <td>Nikitin</td>
+                                <td>+998909883962</td>
+                                <td>1000000</td>
+                                <td>26/12/2019</td>
+                                <td>01/01/2020</td>
+                                <td>31/01/2019</td>
+                                <td>83</td>
+                                <td>198</td>
+                                <td>17/07/1988</td>
+                                <td>12</td>
+                                <td>morning</td>
+                                <td>individual</td>
+                                <td>VIP</td>
+                                <td>50%</td>
+                                <td>G.Tashkent</td>
+                                <td>hopefaithlove@mail.ru</td>
+                            </tr>
+                            </tbody>
+                            <tbody>
+                            <tr>
+                                <td>0000001</td>
+                                <td><img src="../static/images/1.jpeg" alt="..." class="img-responsive "></td>
+                                <td>Galina</td>
+                                <td>Nikitina</td>
+                                <td>+998909815173</td>
+                                <td>1000000</td>
+                                <td>26/12/2019</td>
+                                <td>01/01/2020</td>
+                                <td>31/01/2019</td>
+                                <td>48</td>
+                                <td>168</td>
+                                <td>17/10/1988</td>
+                                <td>12</td>
+                                <td>morning</td>
+                                <td>individual</td>
+                                <td>VIP</td>
+                                <td>50%</td>
+                                <td>G.Tashkent</td>
+                                <td>cuatrua@gmail.com</td>
+                            </tr>
+                            </tbody>
+                            <tbody>
+                            <tr>
+                                <td>0000002</td>
+                                <td><img src="../static/images/me.jpg" alt="..." class="img-responsive img-circle"></td>
+                                <td>Maksim</td>
+                                <td>Nikitin</td>
+                                <td>+998909883962</td>
+                                <td>1000000</td>
+                                <td>26/12/2019</td>
+                                <td>01/01/2020</td>
+                                <td>31/01/2019</td>
+                                <td>83</td>
+                                <td>198</td>
+                                <td>17/07/1988</td>
+                                <td>12</td>
+                                <td>morning</td>
+                                <td>individual</td>
+                                <td>VIP</td>
+                                <td>50%</td>
+                                <td>G.Tashkent</td>
+                                <td>hopefaithlove@mail.ru</td>
+                            </tr>
+                            </tbody>
+                            <tbody>
+                            <tr>
+                                <td>0000001</td>
+                                <td><img src="../static/images/1.jpeg" alt="..." class="img-responsive "></td>
+                                <td>Galina</td>
+                                <td>Nikitina</td>
+                                <td>+998909815173</td>
+                                <td>1000000</td>
+                                <td>26/12/2019</td>
+                                <td>01/01/2020</td>
+                                <td>31/01/2019</td>
+                                <td>48</td>
+                                <td>168</td>
+                                <td>17/10/1988</td>
+                                <td>12</td>
+                                <td>morning</td>
+                                <td>individual</td>
+                                <td>VIP</td>
+                                <td>50%</td>
+                                <td>G.Tashkent</td>
+                                <td>cuatrua@gmail.com</td>
+                            </tr>
+                            </tbody>
+                            <tbody>
+                            <tr>
+                                <td>0000002</td>
+                                <td><img src="../static/images/me.jpg" alt="..." class="img-responsive img-circle"></td>
+                                <td>Maksim</td>
+                                <td>Nikitin</td>
+                                <td>+998909883962</td>
+                                <td>1000000</td>
+                                <td>26/12/2019</td>
+                                <td>01/01/2020</td>
+                                <td>31/01/2019</td>
+                                <td>83</td>
+                                <td>198</td>
+                                <td>17/07/1988</td>
+                                <td>12</td>
+                                <td>morning</td>
+                                <td>individual</td>
+                                <td>VIP</td>
+                                <td>50%</td>
+                                <td>G.Tashkent</td>
                                 <td>hopefaithlove@mail.ru</td>
                             </tr>
                             </tbody>
@@ -142,76 +605,14 @@
     </div>
 </div>
 
-
-{#	<div id="app">#}
-{#		<div class="left_panel clearfix">#}
-{#			<div class="logo">#}
-{#				#}
-{#			</div>#}
-{#			<div class="left_panel_info">#}
-{#				<div class="first">#}
-{#					#}
-{#				</div>#}
-{#				<div class="second">#}
-{#					#}
-{#				</div>#}
-{#				<div class="third">#}
-{#					#}
-{#				</div>#}
-{#				<div class="fourth">#}
-{#					#}
-{#				</div>#}
-{#				<div class="fifth">#}
-{#					#}
-{#				</div>#}
-{#			</div>#}
-{#        </div>#}
-{#        <div class="right_panel  clearfix">#}
-{#				<div class="header">#}
-{#					<div class="header_info">#}
-{#						<div class="logo_text">#}
-{#							#}
-{#						</div>#}
-{#						<div class="search_logo">#}
-{#							#}
-{#						</div>#}
-{#						<div class="search">#}
-{#							#}
-{#						</div>#}
-{#						<div class="filters">#}
-{#							<div class="first_filter"></div>#}
-{#							<div class="first_second"></div>#}
-{#							<div class="first_third"></div>#}
-{#						</div>#}
-{#					</div>#}
-{#                </div>#}
-{#                <div class="main">#}
-{#                    <div class="main_info">#}
-{##}
-{#                    </div>#}
-{#                </div>#}
-{##}
-{#			</div>#}
-{#        </div>#}
-{##}
-{#	</div>#}
-{#<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>#}
-{#<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>#}
-{#<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>#}
-
-</body>
-<footer>
+<footer class="container-fluid ">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-xs-10 col-md-10" style="background-color: aqua">
-                foter
-            </div>
-            <div class="col-xs-2 col-md-2">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter"
-                        style="background-color: white; border: 0;">
+            <div class="col">
+                <a class="btn btn-light fixed-bottom" href="#" role="button" style="float: right" data-toggle="modal" data-target="#exampleModalCenter">
                     <img src="../static/images/new_user.png" class="img-responsive rounded-circle float-right" alt="..."
-                         width="30%">
-                </button>
+                     width="50px">
+                </a>
                 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
                      aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
@@ -228,51 +629,53 @@
                                     <form role="form" class="form-inline">
                                         <div class="form-row">
                                             <div class="col-xs-6 col-md-6 col-lg-6">
-                                                <input type="text" class="form-control" placeholder="Имя">
+                                                <input type="text" class="form-control" style="width: 75%" placeholder="Имя">
                                             </div>
                                             <div class="col-xs-6 col-md-6 col-lg-6">
-                                                <input type="text" class="form-control" placeholder="Фамилия">
+                                                <input type="text" class="form-control" style="width: 75%" placeholder="Фамилия">
                                             </div>
                                         </div>
                                         <div class="form-row">
-                                            <div class="col-xs-6">
+                                            <div class="col-xs-4">
                                                 <label for="example-date-input"
                                                        class="col-xs-2 col-form-label">Телефон</label>
-                                                <input class="form-control" type="tel" value="+998 "
+                                                <input class="form-control" type="tel" style="width: 50%" value="+998 "
                                                        id="example-tel-input">
                                             </div>
-                                            <div class="col-xs-6">
+                                            <div class="col-xs-4 col-md-4 col-lg-4">
+                                                <label for="example-number-input"
+                                                       class="col-xs-2 col-form-label">Оплата</label>
+                                                <input class="form-control" type="number" style="width: 75%" id="example-number-input">
+                                            </div>
+                                            <div class="col-xs-4">
                                                 <label for="example-date-input" class="col-xs-2 col-form-label">Дата
                                                     оплаты</label>
-                                                <input class="form-control" type="date" value="Дата оплаты"
-                                                       id="example-date-input">
+                                                <input class="form-control" type="date" id="example-date-input">
                                             </div>
                                         </div>
                                         <div class="form-row">
                                             <div class="col-xs-6 col-md-6 col-lg-6">
                                                 <label for="example-date-input" class="col-xs-2 col-form-label">Дата
                                                     активации</label>
-                                                <input class="form-control" type="date" value="Дата активации"
-                                                       id="example-date-input">
+                                                <input class="form-control" type="date" id="example-date-input">
                                             </div>
                                             <div class="col-xs-6 col-md-6 col-lg-6">
                                                 <label for="example-date-input" class="col-xs-2 col-form-label">Дата
                                                     окончания</label>
-                                                <input class="form-control" type="date" value="Дата окончания"
-                                                       id="example-date-input">
+                                                <input class="form-control" type="date" id="example-date-input">
                                             </div>
                                         </div>
                                         <div class="form-row">
                                             <div class="col-xs-6 col-md-6 col-lg-6">
                                                 <label for="example-number-input" class="col-xs-2 col-form-label">Вес
                                                     кг</label>
-                                                <input class="form-control" type="number" value=""
+                                                <input class="form-control" type="number" style="width: 50%" value=""
                                                        id="example-number-input">
                                             </div>
                                             <div class="col-xs-6 col-md-6 col-lg-6">
                                                 <label for="example-number-input" class="col-xs-2 col-form-label">Рост
                                                     см</label>
-                                                <input class="form-control" type="number" value=""
+                                                <input class="form-control" type="number" style="width: 50%" value=""
                                                        id="example-number-input">
                                             </div>
                                         </div>
@@ -280,13 +683,12 @@
                                             <div class="col-xs-4 col-md-4 col-lg-4">
                                                 <label for="example-date-input" class="col-xs-2 col-form-label">Дата
                                                     рождения</label>
-                                                <input class="form-control" type="date" value="Дата активации"
-                                                       id="example-date-input">
+                                                <input class="form-control" type="date" id="example-date-input">
                                             </div>
                                             <div class="col-xs-4 col-md-4 col-lg-4">
                                                 <label for="example-number-input" class="col-xs-2 col-form-label">Кол-во
                                                     посещений</label>
-                                                <input class="form-control" type="number" value="12"
+                                                <input class="form-control" type="number" style="width: 50%" value="12"
                                                        id="example-number-input">
                                             </div>
                                             <div class="col-xs-4 col-md-4 col-lg-4">
@@ -318,23 +720,19 @@
                                             </div>
                                         </div>
                                         <div class="form-row">
-                                            <div class="col-xs-6 col-md-6 col-lg-46">
-                                                <label for="example-number-input"
-                                                       class="col-xs-2 col-form-label">Оплата</label>
-                                                <input class="form-control" type="number" id="example-number-input">
-                                            </div>
+
                                             <div class="col-xs-6 col-md-6 col-lg-6">
                                                 <label for="example-number-input"
                                                        class="col-xs-2 col-form-label">Скидка</label>
-                                                <input class="form-control" type="number" id="example-number-input">
+                                                <input class="form-control" type="number" style="width: 75%" id="example-number-input">
                                             </div>
                                         </div>
                                         <div class="form-row">
                                             <div class="col-xs-6 col-md-6 col-lg-6">
-                                                <input type="text" class="form-control" placeholder="Адрес">
+                                                <input type="text" class="form-control" style="width: 75%" placeholder="Адрес">
                                             </div>
                                             <div class="col-xs-6 col-md-6 col-lg-6">
-                                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                                <input type="email" class="form-control" style="width: 75%" id="exampleFormControlInput1"
                                                        placeholder="email">
                                             </div>
                                         </div>
@@ -353,4 +751,7 @@
         </div>
     </div>
 </footer>
+
+</body>
+
 </html>
